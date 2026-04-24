@@ -13,7 +13,7 @@ jobs:
   notify-msg:
     needs: build
     if: always()
-    uses: .github/workflows/resuableTemp.yaml@main
+    uses: nikhilande/shared_call-test/.github/workflows/resuableTemp.yaml@main
     with:
       repository: ${{ github.repository }}
       workflow: ${{ github.workflow }}
